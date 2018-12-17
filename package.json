@@ -1,0 +1,17 @@
+{
+  "name": "sandbox-serverless-webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kamataryo/sandbox-serverless-webapp.git",
+  "author": "kamataryo <mugil.cephalus+ciconia.local@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --cache --ext=js .",
+    "format": "prettier-eslint \"./**/*.js\" --write"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
