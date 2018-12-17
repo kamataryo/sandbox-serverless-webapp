@@ -1,0 +1,29 @@
+service: serverless-cms
+frameworkVersion: '>=1.29.2 <2.0.0'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 512
+  region: ap-northeast-1
+
+functions:
+  api:
+    handler: handler.app
+    events:
+      - http:
+          path: /
+          method: get
+      - http:
+          path: /{any+}
+          method: get
+
+  script:
+    handler: handler.script
+    events:
+      - http:
+          path: /script
+          method: get

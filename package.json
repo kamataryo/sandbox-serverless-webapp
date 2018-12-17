@@ -7,11 +7,17 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --cache --ext=js .",
-    "format": "prettier-eslint \"./**/*.js\" --write"
+    "format": "prettier-eslint \"./**/*.js\" --write",
+    "start": "sls offline start",
+    "deploy": "sls deploy --stage dev",
+    "deploy:prod": "sls deploy --stage prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^4.7.1",
+    "serverless": "^1.35.0",
+    "serverless-offline": "^3.31.3"
   }
 }
